@@ -1,6 +1,6 @@
 ''' this is a python file 
     you can use the jupyter interactive window(Use ctrl + shift + p) in vs code 
-    to view the code line by line. A notebook would have been better for this tax.
+    to view the code line by line. A notebook would have been better for this task.
 '''
 #import libraries
 import pandas as pd
