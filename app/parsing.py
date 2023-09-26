@@ -94,9 +94,9 @@ passage_metadata={
     'Passages':all_passages,
     'Metadata':all_metadata
 }
-print(f'{all_passages[4]}\n\n\n,{all_metadata[4]}')
-#filepath = "app\pairings\passage_metadata.csv"
-#df=pd.DataFrame(passage_metadata)
-#df.to_csv(filepath, index=False)
 
-#print(f"CSV file '{filepath}' has been created.")
+filepath = "app\pairings\passage_metadata.csv"
+df=pd.DataFrame(passage_metadata)
+df.to_csv(filepath, index=False)
+
+print(f"CSV file '{filepath}' has been created.")
