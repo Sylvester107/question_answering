@@ -12,34 +12,51 @@ df=pd.read_csv('app\pairings\passage_metadata_emb.csv')
 
 #connect to elasticsearch client
 es = Elasticsearch(
-    #'https://f69b4906a1a446de9326cd49d8eda261.us-central1.gcp.cloud.es.io',
-    api_key=('Sylvester Ampomah','Y3d6UTBvb0Jxd25Bb2xJQ3dPNUo6OEttM29ESjNRTzZxYXNETGJKRzRvUQ=='),
-    #cloud_id="4e692d4fa9a94d7bacb913393827e0be:dXMtY2VudHJhbDEuZ2NwLmNsb3VkLmVzLmlvJGY2OWI0OTA2YTFhNDQ2ZGU5MzI2Y2Q0OWQ4ZWRhMjYxJDc4NzgwNTVjNDJlNDRhNTE5YWUzNTA5MThmNWNiOGM0",
-    #basic_auth=('yhungsly87@gmail.com','HEMVeY3d9y4a$jd')
+  "https://92d997736474439dae5ccfaedc2ad990.us-central1.gcp.cloud.es.io:443",
+  api_key="R2xyODFZb0I4TjlWWlhYRWNGZkM6UzNwM20wWVZRdDJQUktLelEyMGdDUQ=="
 )
 
 #create an index
-es.indices.create(index='my_index')
+#es.indices.create(index='my_index')
 
 # Create a function to prepare documents
-def prepare_document(row):
-    return {
-        "_index": "QA_index",
-        "_source": {
-            "passage": row['passage'],
-            "metadata": row['metadata'],
-            "embeddings": row['embeddings']
-        }
+documents = []
+
+for _, row in df.iterrows():
+    document = {
+        "passage": row["Passages"],
+        "metadata": row["Metadata"],
+        "embeddings": row["Embedding"]
     }
+    documents.append(document)
+from elasticsearch.helpers import bulk
 
-# Use Pandas' apply function to efficiently prepare documents
-documents = df.apply(prepare_document, axis=1)
+index_name = "search-passagemetadataemb"  
+def generate_actions():
+    for doc in documents:
+        yield {
+            "_index": index_name,
+            "_source": doc
+        }
 
-# Use Elasticsearch's streaming_bulk to efficiently index the documents
-success, failed = streaming_bulk(es, documents, chunk_size=1000)
+# Use the bulk helper function to efficiently index the documents
+success, failed = bulk(es, generate_actions())
 
 # Check for successful indexing
 if failed:
     print(f"Failed to index {len(failed)} documents.")
 else:
     print(f"Successfully indexed {len(success)} documents.")
+
+
+# Use Pandas' apply function to efficiently prepare documents
+#documents = df.apply(prepare_document, axis=1)
+
+# Use Elasticsearch's streaming_bulk to efficiently index the documents
+#es.bulk(operations=documents, pipeline="ent-search-generic-ingestion")
+
+# Check for successful indexing
+#if failed:
+#    print(f"Failed to index {len(failed)} documents.")
+#else:
+ #   print(f"Successfully indexed {len(success)} documents.")
