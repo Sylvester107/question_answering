@@ -24,20 +24,23 @@ es = Elasticsearch(
 
 
 # Generate a list of dictionaries containing the passage, corresponding metadata and embeddings
-documents = []
+def prepare_documents(df):
+    documents = []
 
-for _, row in df.iterrows():
-    #row["Embedding"].tolist()
-    document = {
-        "Passages": row["Passages"],
-        "Metadata": row["Metadata"],
-        "Embedding": {
-            "type": "dense_vector",
-            "dims": 3,  # Specify the dimensionality of your dense vectors
-            "value": row["Embedding"].tolist()
-    }}
-    documents.append(document)
+    for _, row in df.iterrows():
+        #row["Embedding"].tolist()
+        document = {
+            "Passages": row["Passages"],
+            "Metadata": row["Metadata"],
+            "Embedding": {
+                "type": "dense_vector",
+                "dims": 3,  # Specify the dimensionality of your dense vectors
+                "value": row["Embedding"].tolist()
+        }}
+        documents.append(document)
+    return documents
 
+documents=prepare_documents(df=df)
 # Create a function to prepare documents for indexing
 index_name = "search-passagemetadataemb"  #index name created on elasticsearch
 #index 
