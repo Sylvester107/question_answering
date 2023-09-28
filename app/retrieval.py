@@ -3,7 +3,6 @@ import pandas as pd
 from scipy.spatial.distance import cosine
 from sentence_transformers import SentenceTransformer
 import numpy as np
-
 """
 function 1
 """
@@ -61,6 +60,7 @@ while breaker=='y':
     "https://92d997736474439dae5ccfaedc2ad990.us-central1.gcp.cloud.es.io:443",
     api_key="Ym16RzI0b0JIcXpRTU9NQUNUNE46YnBmaUtCWHdTNXlnN1dZR2w4Rllqdw=="
     )
+   
     #index name created on elasticsearch
     index_name="search-passagemetadataemb" 
     #search
