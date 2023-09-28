@@ -37,6 +37,12 @@ all_metadata=[]
 #initiate a for loop to iterate over files in corpus
 for text_file_path in glob.glob(file_pattern):
 
+    ##Extract metadata
+    metadata_file_path = text_file_path.replace("Technical", "Metadata").replace(".txt", ".json")
+    with open(metadata_file_path,'r',encoding='UTF-8') as f:
+        #read file contents into a variable
+        metadata=json.load(f)
+
     ## Extract the passages within paragraphs
 
     with open(text_file_path,'rt',encoding='UTF-8') as file:
@@ -44,14 +50,14 @@ for text_file_path in glob.glob(file_pattern):
         file_contents_ls=file.readlines() #returnts a list
 
         #remove the newline character using list comprehension
-        file_contents_ls=lines = [line.strip() for line in file_contents_ls]
+        file_contents_ls=[line.strip() for line in file_contents_ls]
     #print(file_contents_ls)
 
 
     #define a drop list
     drop_list=['__section__','__paragraph__']
 
-    filtered_list=filtered_list = [item for item in file_contents_ls if item not in drop_list]
+    filtered_list = [item for item in file_contents_ls if item not in drop_list]
     #print to see output
 
     #print(filtered_list)
@@ -69,25 +75,12 @@ for text_file_path in glob.glob(file_pattern):
     #for loop with a step to efficiently combine strings
     for i in range(0, len(filtered_list), group_size):
         passage = ' '.join(filtered_list[i:i + group_size])
-        passages.append(passage)
+        all_metadata.append(metadata)
+        all_passages.append(passage)
 
     #combined passages Uncomment to check output 
     #for passage in passages:
         #print(passage)
-
-    #join to form 1 passage
-    processed_passage=' '.join(passages)
-    all_passages.append(processed_passage)
-    #print(passage_1)
-
-    ##Extract metadata
-    metadata_file_path = text_file_path.replace("Technical", "Metadata").replace(".txt", ".json")
-    with open(metadata_file_path,'r',encoding='UTF-8') as f:
-        #read file contents into a variable
-        metadata=json.load(f)
-    #print(metadata)
-
-    all_metadata.append(metadata)
 
 #Create a CSV file
 passage_metadata={
