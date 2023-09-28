@@ -70,7 +70,10 @@ es = Elasticsearch(
   api_key="Ym16RzI0b0JIcXpRTU9NQUNUNE46YnBmaUtCWHdTNXlnN1dZR2w4Rllqdw=="
 )
 app.logger.info(msg='es instance created')
+"""
+Question asking endpoint
 
+"""
 # Define an endpoint for receiving a user question via POST request
 @app.route('/ask', methods=['POST'])
 def receive_question():
@@ -98,10 +101,12 @@ def receive_question():
         )
     top_3=Extraction(response=response,question_embedding=question_embedding)
     results={}
+    id=0 #  id for different passages 
     for passage_info in top_3:
-        results[f"Passage:"]=passage_info["passage"]
-        results[f"Metadata:"]= passage_info["metadata"]
-        results[f"Score:"]= passage_info["score"]
+        results[f"Passage {id}:"]=passage_info["passage"]
+        results[f"Metadata {id}:"]= passage_info["metadata"]
+        results[f"Score {id}:"]= passage_info["score"]
+        id=id+1
 
     # Respond with a confirmation message
     response = {'message': 'Question received successfully',
@@ -113,6 +118,10 @@ def receive_question():
         return jsonify({'error': 'Invalid response data'}), 500
     return jsonify(response)
 
+
+"""
+File Upload endpoint
+"""
 @app.route('/upload_csv', methods=['POST'])
 def upload_document():
     # Get the uploaded file from the request
