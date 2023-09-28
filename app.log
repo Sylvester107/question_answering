@@ -1,0 +1,66 @@
+INFO:app:es instance created
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2023 22:09:30] "POST /ask HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2023 22:10:01] "[31m[1mPOST /upload_csv HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2023 22:10:11] "[31m[1mPOST /upload_csv HTTP/1.1[0m" 400 -
+INFO:app:es instance created
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2023 22:12:17] "[31m[1mPOST /upload_csv HTTP/1.1[0m" 400 -
+INFO:app:es instance created
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:app:es instance created
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: sentence-transformers/multi-qa-distilbert-cos-v1
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device: cpu
+INFO:elastic_transport.transport:POST https://92d997736474439dae5ccfaedc2ad990.us-central1.gcp.cloud.es.io:443/search-passagemetadataemb/_search?q=What%20is%20an%20offer%3F [status:200 duration:1.943s]
+ERROR:app:Exception on /ask [POST]
+Traceback (most recent call last):
+  File "C:\Users\sylvester\Desktop\ML Coding Challenge\question_answering\env\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\sylvester\Desktop\ML Coding Challenge\question_answering\env\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\sylvester\Desktop\ML Coding Challenge\question_answering\env\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\sylvester\Desktop\ML Coding Challenge\question_answering\env\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\sylvester\Desktop\ML Coding Challenge\question_answering\app\app.py", line 100, in receive_question
+    top_3=Extraction(response=response)
+  File "C:\Users\sylvester\Desktop\ML Coding Challenge\question_answering\app\app.py", line 59, in Extraction
+    score = 1 - cosine(question_embedding, passage_embedding)  # Calculate cosine similarity
+NameError: name 'question_embedding' is not defined
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2023 22:54:59] "[35m[1mPOST /ask HTTP/1.1[0m" 500 -
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: sentence-transformers/multi-qa-distilbert-cos-v1
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device: cpu
+INFO:elastic_transport.transport:POST https://92d997736474439dae5ccfaedc2ad990.us-central1.gcp.cloud.es.io:443/search-passagemetadataemb/_search?q=What%20is%20an%20offer%3F [status:200 duration:1.294s]
+ERROR:app:Exception on /ask [POST]
+Traceback (most recent call last):
+  File "C:\Users\sylvester\Desktop\ML Coding Challenge\question_answering\env\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\sylvester\Desktop\ML Coding Challenge\question_answering\env\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\sylvester\Desktop\ML Coding Challenge\question_answering\env\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\sylvester\Desktop\ML Coding Challenge\question_answering\env\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\sylvester\Desktop\ML Coding Challenge\question_answering\app\app.py", line 100, in receive_question
+    results={}
+  File "C:\Users\sylvester\Desktop\ML Coding Challenge\question_answering\app\app.py", line 59, in Extraction
+    relevant_passages.append({"passage": passage, "metadata": metadata, "score": score})
+NameError: name 'question_embedding' is not defined
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2023 23:04:09] "[35m[1mPOST /ask HTTP/1.1[0m" 500 -
+INFO:app:es instance created
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: sentence-transformers/multi-qa-distilbert-cos-v1
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device: cpu
+INFO:elastic_transport.transport:POST https://92d997736474439dae5ccfaedc2ad990.us-central1.gcp.cloud.es.io:443/search-passagemetadataemb/_search?q=What%20is%20an%20offer%3F [status:200 duration:1.327s]
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2023 23:05:20] "POST /ask HTTP/1.1" 200 -
