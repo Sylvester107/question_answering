@@ -8,13 +8,14 @@ import numpy as np
 function 1
 """
 # returns a dataframe for the current query
-def create_df(top_3_relevant_passages):
+def create_df(top_3_relevant_passages,question):
     QA_dict={}
     index=0
     for passage_info in top_3_relevant_passages:
         QA_dict[f"Passage {index}:"]=passage_info["passage"]
         QA_dict[f"Metadata {index}:"]= passage_info["metadata"]
         QA_dict[f"Score {index}:"]= passage_info["score"]
+        QA_dict['Question']=question
         index=index+1
     
     df=pd.DataFrame([QA_dict])
@@ -69,7 +70,7 @@ while breaker=='y':
             size=3
         )
     top_3=Extraction(response=response)
-    current_df=create_df(top_3)
+    current_df=create_df(top_3,question=question)
     result_df = pd.concat([result_df, current_df], ignore_index=True)
     breaker=input('Do you have another question y/n: ').lower()
 
