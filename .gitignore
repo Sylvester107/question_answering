@@ -3,3 +3,4 @@
 env
 /env
 app/__pycache__/app.cpython-39.pyc
+app/__pycache__/indexing.cpython-39.pyc
