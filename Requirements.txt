@@ -2,3 +2,4 @@ pandas
 Numpy
 sentence-transformers
 elasticsearch
+Flask
