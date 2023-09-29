@@ -5,27 +5,11 @@ from elasticsearch import Elasticsearch
 from scipy.spatial.distance import cosine
 from sentence_transformers import SentenceTransformer
 import logging
-import config
-
-"""
-Function for configuration(testing,development,production)
-"""
-def create_app(config_name):
-    app = Flask(__name__)
-
-    # Load configuration based on the provided config_name
-    if config_name == 'development':
-        app.config.from_object(config.DevelopmentConfig)
-    elif config_name == 'production':
-        app.config.from_object(config.ProductionConfig)
-    elif config_name == 'testing':
-        app.config.from_object(config.TestingConfig)
-
-    return app
 
 
 #Creat the flask instance Using create_app
-app=create_app('development')
+app=Flask(__name__)
+
 # Configure logging
 logging.basicConfig(filename='app.log', level=logging.INFO)
 """
@@ -171,4 +155,5 @@ def upload_document():
 
     return jsonify({'message': 'No file uploaded'})
 
-
+if __name__=='__main__':
+    app.run(debug=True)
