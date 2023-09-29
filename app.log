@@ -93,3 +93,15 @@ INFO:app:es instance created
 INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on http://127.0.0.1:5000
 INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:app:es instance created
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+INFO:app:es instance created
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 575-515-885
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: sentence-transformers/multi-qa-distilbert-cos-v1
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device: cpu
+INFO:elastic_transport.transport:POST https://92d997736474439dae5ccfaedc2ad990.us-central1.gcp.cloud.es.io:443/search-passagemetadataemb/_search?q=can%20you%20repeat%20an%20injunction%20application%20in%20the%20same%20court [status:200 duration:2.012s]
+INFO:werkzeug:127.0.0.1 - - [29/Sep/2023 10:35:08] "POST /ask HTTP/1.1" 200 -
