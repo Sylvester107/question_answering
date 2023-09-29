@@ -84,3 +84,12 @@ INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransform
 INFO:sentence_transformers.SentenceTransformer:Use pytorch device: cpu
 INFO:elastic_transport.transport:POST https://92d997736474439dae5ccfaedc2ad990.us-central1.gcp.cloud.es.io:443/search-passagemetadataemb/_search?q=can%20you%20repeat%20an%20injunction%20application%20in%20the%20same%20court [status:200 duration:0.485s]
 INFO:werkzeug:127.0.0.1 - - [28/Sep/2023 23:18:40] "POST /ask HTTP/1.1" 200 -
+INFO:app:es instance created
+INFO:app:es instance created
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:app:es instance created
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
