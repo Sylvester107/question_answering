@@ -269,3 +269,39 @@ INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransform
 INFO:sentence_transformers.SentenceTransformer:Use pytorch device: cpu
 INFO:elastic_transport.transport:POST https://92d997736474439dae5ccfaedc2ad990.us-central1.gcp.cloud.es.io:443/search-passagemetadataemb/_search?q=battery%20and%20assault%20principles [status:200 duration:1.346s]
 INFO:werkzeug:127.0.0.1 - - [30/Sep/2023 02:48:38] "POST /ask HTTP/1.1" 200 -
+INFO:app:es instance created
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: sentence-transformers/multi-qa-distilbert-cos-v1
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device: cpu
+INFO:elastic_transport.transport:POST https://92d997736474439dae5ccfaedc2ad990.us-central1.gcp.cloud.es.io:443/search-passagemetadataemb/_search?q=can%20you%20repeat%20an%20injunction%20application%20in%20the%20same%20court [status:200 duration:1.789s]
+INFO:werkzeug:127.0.0.1 - - [30/Sep/2023 08:30:33] "POST /ask HTTP/1.1" 200 -
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: sentence-transformers/multi-qa-distilbert-cos-v1
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device: cpu
+INFO:elastic_transport.transport:POST https://92d997736474439dae5ccfaedc2ad990.us-central1.gcp.cloud.es.io:443/search-passagemetadataemb/_search?q=What%20is%20a%20valid%20offer [status:200 duration:0.508s]
+INFO:werkzeug:127.0.0.1 - - [30/Sep/2023 08:33:55] "POST /ask HTTP/1.1" 200 -
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: sentence-transformers/multi-qa-distilbert-cos-v1
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device: cpu
+INFO:elastic_transport.transport:POST https://92d997736474439dae5ccfaedc2ad990.us-central1.gcp.cloud.es.io:443/search-passagemetadataemb/_search?q=can%20you%20repeat%20an%20injunction%20application%20in%20the%20same%20court [status:200 duration:0.539s]
+INFO:werkzeug:127.0.0.1 - - [30/Sep/2023 08:34:56] "POST /ask HTTP/1.1" 200 -
+INFO:app:es instance created
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: sentence-transformers/multi-qa-distilbert-cos-v1
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device: cpu
+INFO:elastic_transport.transport:POST https://92d997736474439dae5ccfaedc2ad990.us-central1.gcp.cloud.es.io:443/search-passagemetadataemb/_search?q=can%20you%20repeat%20an%20injunction%20application%20in%20the%20same%20court [status:200 duration:1.774s]
+INFO:werkzeug:127.0.0.1 - - [30/Sep/2023 09:00:36] "POST /ask HTTP/1.1" 200 -
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: sentence-transformers/multi-qa-distilbert-cos-v1
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device: cpu
+INFO:elastic_transport.transport:POST https://92d997736474439dae5ccfaedc2ad990.us-central1.gcp.cloud.es.io:443/search-passagemetadataemb/_search?q=Terms%20to%20dissolve%20a%20company%3F [status:200 duration:0.508s]
+INFO:werkzeug:127.0.0.1 - - [30/Sep/2023 09:01:08] "POST /ask HTTP/1.1" 200 -
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: sentence-transformers/multi-qa-distilbert-cos-v1
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device: cpu
+INFO:elastic_transport.transport:POST https://92d997736474439dae5ccfaedc2ad990.us-central1.gcp.cloud.es.io:443/search-passagemetadataemb/_search?q=What%20case%20defines%20what%20an%20offer%20is%3F [status:200 duration:1.018s]
+INFO:werkzeug:127.0.0.1 - - [30/Sep/2023 09:03:30] "POST /ask HTTP/1.1" 200 -
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: sentence-transformers/multi-qa-distilbert-cos-v1
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device: cpu
+INFO:elastic_transport.transport:POST https://92d997736474439dae5ccfaedc2ad990.us-central1.gcp.cloud.es.io:443/search-passagemetadataemb/_search?q=can%20you%20repeat%20an%20injunction%20application%20in%20the%20same%20court [status:200 duration:0.646s]
+INFO:werkzeug:127.0.0.1 - - [30/Sep/2023 09:04:24] "POST /ask HTTP/1.1" 200 -
