@@ -14,10 +14,7 @@ pip install the following dependencies in your env when you decide to run it loc
 
 #Transformer models(from huggingface)
 from transformers import AutoModelForCausalLM, AutoTokenizer
-from transformers import TrainingArguments
-from transformers import AutoModelForSequenceClassification
-from transformers import Trainer
-import torch
+
 
 import pandas as pd
 import numpy as np
