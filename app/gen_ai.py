@@ -14,7 +14,7 @@ pip install the following dependencies in your env when you decide to run it loc
 
 #Transformer models(from huggingface)
 from transformers import AutoModelForCausalLM, AutoTokenizer
-
+from huggingface_hub import InferenceClient
 
 import pandas as pd
 import numpy as np
@@ -61,3 +61,21 @@ prompt_template = f""" You are legal practioner with indepth knowledge about law
 print("Question:", question)
 print("Model's answer: ")
 print(inference(prompt_template, base_model, tokenizer))
+
+"""
+Simplest method is to use huggingface inference api
+However the previous method will be good for finetuning on our own documents
+"""
+
+
+
+client = InferenceClient(token='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')
+question = input("Ask a question: ") #take input question
+#prompt template(alpaca template)
+prompt_template = f""" You are legal practitioner with indepth knowledge about law. write a response that correcty answers the following question
+
+### Instruction:
+{question}
+### Response: """
+response=client.text_generation(prompt=prompt_template,max_new_tokens=1000,model='tiiuae/falcon-7b-instruct')
+print(response)
