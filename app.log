@@ -105,3 +105,167 @@ INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransform
 INFO:sentence_transformers.SentenceTransformer:Use pytorch device: cpu
 INFO:elastic_transport.transport:POST https://92d997736474439dae5ccfaedc2ad990.us-central1.gcp.cloud.es.io:443/search-passagemetadataemb/_search?q=can%20you%20repeat%20an%20injunction%20application%20in%20the%20same%20court [status:200 duration:2.012s]
 INFO:werkzeug:127.0.0.1 - - [29/Sep/2023 10:35:08] "POST /ask HTTP/1.1" 200 -
+INFO:app:es instance created
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+INFO:app:es instance created
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 575-515-885
+INFO:app:es instance created
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+INFO:app:es instance created
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 575-515-885
+INFO:werkzeug: * Detected change in 'C:\\Users\\sylvester\\Desktop\\ML Coding Challenge\\question_answering\\app\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:app:es instance created
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:app:es instance created
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: sentence-transformers/multi-qa-distilbert-cos-v1
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device: cpu
+INFO:elastic_transport.transport:POST https://92d997736474439dae5ccfaedc2ad990.us-central1.gcp.cloud.es.io:443/search-passagemetadataemb/_search?q=can%20you%20repeat%20an%20injunction%20application%20in%20the%20same%20court [status:200 duration:1.821s]
+INFO:werkzeug:127.0.0.1 - - [29/Sep/2023 22:28:55] "POST /ask HTTP/1.1" 200 -
+INFO:app:es instance created
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: sentence-transformers/multi-qa-distilbert-cos-v1
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device: cpu
+INFO:elastic_transport.transport:POST https://92d997736474439dae5ccfaedc2ad990.us-central1.gcp.cloud.es.io:443/search-passagemetadataemb/_search?q=can%20you%20repeat%20an%20injunction%20application%20in%20the%20same%20court [status:200 duration:1.881s]
+INFO:werkzeug:127.0.0.1 - - [29/Sep/2023 23:49:45] "POST /ask HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [29/Sep/2023 23:50:07] "[33mPOST / HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [29/Sep/2023 23:50:54] "[33mPOST / HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [29/Sep/2023 23:58:05] "[33mPOST / HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [30/Sep/2023 00:01:48] "[33mPOST / HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [30/Sep/2023 00:03:27] "[33mPOST / HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [30/Sep/2023 00:09:04] "[33mPOST / HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [30/Sep/2023 00:10:32] "[33mPOST / HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [30/Sep/2023 00:11:11] "[33mPOST / HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [30/Sep/2023 00:13:06] "[33mPOST / HTTP/1.1[0m" 404 -
+INFO:app:es instance created
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [30/Sep/2023 00:15:53] "[33mPOST / HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [30/Sep/2023 00:17:03] "[33mPOST / HTTP/1.1[0m" 404 -
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: sentence-transformers/multi-qa-distilbert-cos-v1
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device: cpu
+INFO:elastic_transport.transport:POST https://92d997736474439dae5ccfaedc2ad990.us-central1.gcp.cloud.es.io:443/search-passagemetadataemb/_search?q=can%20you%20repeat%20an%20injunction%20application%20in%20the%20same%20court [status:200 duration:1.313s]
+INFO:werkzeug:127.0.0.1 - - [30/Sep/2023 00:17:30] "POST /ask HTTP/1.1" 200 -
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: sentence-transformers/multi-qa-distilbert-cos-v1
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device: cpu
+INFO:werkzeug:127.0.0.1 - - [30/Sep/2023 00:18:13] "[31m[1mPOST /ask HTTP/1.1[0m" 415 -
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: sentence-transformers/multi-qa-distilbert-cos-v1
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device: cpu
+ERROR:app:Exception on /ask [POST]
+Traceback (most recent call last):
+  File "C:\Users\sylvester\Desktop\ML Coding Challenge\question_answering\env\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\sylvester\Desktop\ML Coding Challenge\question_answering\env\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\sylvester\Desktop\ML Coding Challenge\question_answering\env\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\sylvester\Desktop\ML Coding Challenge\question_answering\env\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\sylvester\Desktop\ML Coding Challenge\question_answering\app\app.py", line 86, in receive_question
+    user_question = question_data.get('question')
+AttributeError: 'str' object has no attribute 'get'
+INFO:werkzeug:127.0.0.1 - - [30/Sep/2023 00:18:44] "[35m[1mPOST /ask HTTP/1.1[0m" 500 -
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: sentence-transformers/multi-qa-distilbert-cos-v1
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device: cpu
+ERROR:app:Exception on /ask [POST]
+Traceback (most recent call last):
+  File "C:\Users\sylvester\Desktop\ML Coding Challenge\question_answering\env\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\sylvester\Desktop\ML Coding Challenge\question_answering\env\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\sylvester\Desktop\ML Coding Challenge\question_answering\env\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\sylvester\Desktop\ML Coding Challenge\question_answering\env\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\sylvester\Desktop\ML Coding Challenge\question_answering\app\app.py", line 86, in receive_question
+    user_question = question_data.get('question')
+AttributeError: 'str' object has no attribute 'get'
+INFO:werkzeug:127.0.0.1 - - [30/Sep/2023 00:20:18] "[35m[1mPOST /ask HTTP/1.1[0m" 500 -
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: sentence-transformers/multi-qa-distilbert-cos-v1
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device: cpu
+INFO:elastic_transport.transport:POST https://92d997736474439dae5ccfaedc2ad990.us-central1.gcp.cloud.es.io:443/search-passagemetadataemb/_search?q=what%20is%20an%20offer [status:200 duration:0.548s]
+INFO:werkzeug:127.0.0.1 - - [30/Sep/2023 00:21:52] "POST /ask HTTP/1.1" 200 -
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: sentence-transformers/multi-qa-distilbert-cos-v1
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device: cpu
+INFO:elastic_transport.transport:POST https://92d997736474439dae5ccfaedc2ad990.us-central1.gcp.cloud.es.io:443/search-passagemetadataemb/_search?q=what%20is%20an%20offer [status:200 duration:0.546s]
+INFO:werkzeug:127.0.0.1 - - [30/Sep/2023 00:23:19] "POST /ask HTTP/1.1" 200 -
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: sentence-transformers/multi-qa-distilbert-cos-v1
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device: cpu
+INFO:elastic_transport.transport:POST https://92d997736474439dae5ccfaedc2ad990.us-central1.gcp.cloud.es.io:443/search-passagemetadataemb/_search?q=what%20is%20an%20offer [status:200 duration:0.542s]
+INFO:werkzeug:127.0.0.1 - - [30/Sep/2023 00:23:44] "POST /ask HTTP/1.1" 200 -
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: sentence-transformers/multi-qa-distilbert-cos-v1
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device: cpu
+INFO:elastic_transport.transport:POST https://92d997736474439dae5ccfaedc2ad990.us-central1.gcp.cloud.es.io:443/search-passagemetadataemb/_search?q=what%20is%20an%20offer [status:200 duration:0.532s]
+INFO:werkzeug:127.0.0.1 - - [30/Sep/2023 00:27:03] "POST /ask HTTP/1.1" 200 -
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: sentence-transformers/multi-qa-distilbert-cos-v1
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device: cpu
+INFO:elastic_transport.transport:POST https://92d997736474439dae5ccfaedc2ad990.us-central1.gcp.cloud.es.io:443/search-passagemetadataemb/_search?q=what%20is%20an%20offer [status:200 duration:0.583s]
+INFO:werkzeug:127.0.0.1 - - [30/Sep/2023 00:28:19] "POST /ask HTTP/1.1" 200 -
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: sentence-transformers/multi-qa-distilbert-cos-v1
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device: cpu
+INFO:elastic_transport.transport:POST https://92d997736474439dae5ccfaedc2ad990.us-central1.gcp.cloud.es.io:443/search-passagemetadataemb/_search?q=what%20is%20an%20offer [status:200 duration:0.570s]
+INFO:werkzeug:127.0.0.1 - - [30/Sep/2023 00:29:05] "POST /ask HTTP/1.1" 200 -
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: sentence-transformers/multi-qa-distilbert-cos-v1
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device: cpu
+INFO:elastic_transport.transport:POST https://92d997736474439dae5ccfaedc2ad990.us-central1.gcp.cloud.es.io:443/search-passagemetadataemb/_search?q=what%20is%20an%20offer [status:200 duration:0.815s]
+INFO:werkzeug:127.0.0.1 - - [30/Sep/2023 00:30:30] "POST /ask HTTP/1.1" 200 -
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: sentence-transformers/multi-qa-distilbert-cos-v1
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device: cpu
+INFO:elastic_transport.transport:POST https://92d997736474439dae5ccfaedc2ad990.us-central1.gcp.cloud.es.io:443/search-passagemetadataemb/_search?q=what%20is%20an%20offer [status:200 duration:1.384s]
+INFO:werkzeug:127.0.0.1 - - [30/Sep/2023 00:46:40] "POST /ask HTTP/1.1" 200 -
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: sentence-transformers/multi-qa-distilbert-cos-v1
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device: cpu
+INFO:elastic_transport.transport:POST https://92d997736474439dae5ccfaedc2ad990.us-central1.gcp.cloud.es.io:443/search-passagemetadataemb/_search?q=what%20is%20an%20offer [status:200 duration:0.523s]
+INFO:werkzeug:127.0.0.1 - - [30/Sep/2023 00:47:18] "POST /ask HTTP/1.1" 200 -
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: sentence-transformers/multi-qa-distilbert-cos-v1
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device: cpu
+INFO:elastic_transport.transport:POST https://92d997736474439dae5ccfaedc2ad990.us-central1.gcp.cloud.es.io:443/search-passagemetadataemb/_search?q=what%20is%20an%20offer [status:200 duration:0.527s]
+INFO:werkzeug:127.0.0.1 - - [30/Sep/2023 00:51:19] "POST /ask HTTP/1.1" 200 -
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: sentence-transformers/multi-qa-distilbert-cos-v1
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device: cpu
+INFO:elastic_transport.transport:POST https://92d997736474439dae5ccfaedc2ad990.us-central1.gcp.cloud.es.io:443/search-passagemetadataemb/_search?q=Terms%20to%20dissolve%20a%20company%3F [status:200 duration:0.736s]
+INFO:werkzeug:127.0.0.1 - - [30/Sep/2023 00:55:01] "POST /ask HTTP/1.1" 200 -
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: sentence-transformers/multi-qa-distilbert-cos-v1
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device: cpu
+INFO:elastic_transport.transport:POST https://92d997736474439dae5ccfaedc2ad990.us-central1.gcp.cloud.es.io:443/search-passagemetadataemb/_search?q=Can%20the%20liability%20of%20a%20subsidiary%20company%20be%20extended%20to%20a%20parent%20company [status:200 duration:0.491s]
+INFO:werkzeug:127.0.0.1 - - [30/Sep/2023 00:56:41] "POST /ask HTTP/1.1" 200 -
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: sentence-transformers/multi-qa-distilbert-cos-v1
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device: cpu
+INFO:elastic_transport.transport:POST https://92d997736474439dae5ccfaedc2ad990.us-central1.gcp.cloud.es.io:443/search-passagemetadataemb/_search?q=Can%20the%20liability%20of%20a%20subsidiary%20company%20be%20extended%20to%20a%20parent%20company [status:200 duration:1.818s]
+INFO:werkzeug:127.0.0.1 - - [30/Sep/2023 01:06:15] "POST /ask HTTP/1.1" 200 -
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: sentence-transformers/multi-qa-distilbert-cos-v1
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device: cpu
+INFO:elastic_transport.transport:POST https://92d997736474439dae5ccfaedc2ad990.us-central1.gcp.cloud.es.io:443/search-passagemetadataemb/_search?q=what%20is%20an%20offer [status:200 duration:1.266s]
+INFO:werkzeug:127.0.0.1 - - [30/Sep/2023 02:15:32] "POST /ask HTTP/1.1" 200 -
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: sentence-transformers/multi-qa-distilbert-cos-v1
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device: cpu
+INFO:elastic_transport.transport:POST https://92d997736474439dae5ccfaedc2ad990.us-central1.gcp.cloud.es.io:443/search-passagemetadataemb/_search?q=what%20is%20an%20offer [status:200 duration:0.516s]
+INFO:werkzeug:127.0.0.1 - - [30/Sep/2023 02:17:48] "POST /ask HTTP/1.1" 200 -
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: sentence-transformers/multi-qa-distilbert-cos-v1
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device: cpu
+INFO:elastic_transport.transport:POST https://92d997736474439dae5ccfaedc2ad990.us-central1.gcp.cloud.es.io:443/search-passagemetadataemb/_search?q=What%20case%20defines%20what%20an%20offer%20is%3F [status:200 duration:0.937s]
+INFO:werkzeug:127.0.0.1 - - [30/Sep/2023 02:21:16] "POST /ask HTTP/1.1" 200 -
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: sentence-transformers/multi-qa-distilbert-cos-v1
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device: cpu
+INFO:elastic_transport.transport:POST https://92d997736474439dae5ccfaedc2ad990.us-central1.gcp.cloud.es.io:443/search-passagemetadataemb/_search?q=What%20case%20defines%20what%20an%20offer%20is%3F [status:200 duration:1.093s]
+INFO:werkzeug:127.0.0.1 - - [30/Sep/2023 02:25:23] "POST /ask HTTP/1.1" 200 -
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: sentence-transformers/multi-qa-distilbert-cos-v1
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device: cpu
+INFO:elastic_transport.transport:POST https://92d997736474439dae5ccfaedc2ad990.us-central1.gcp.cloud.es.io:443/search-passagemetadataemb/_search?q=battery%20and%20assault%20principles [status:200 duration:1.346s]
+INFO:werkzeug:127.0.0.1 - - [30/Sep/2023 02:48:38] "POST /ask HTTP/1.1" 200 -
