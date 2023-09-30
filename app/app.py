@@ -156,4 +156,4 @@ def upload_document():
     return jsonify({'message': 'No file uploaded'})
 
 if __name__=='__main__':
-    app.run(debug=True)
+    app.run()
