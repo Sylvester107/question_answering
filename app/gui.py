@@ -3,8 +3,10 @@ import requests
 from huggingface_hub import InferenceClient
 import matplotlib.pyplot as plt
 #Set the page configs
-st.set_page_config(page_title='Question Answering bot',page_icon='😎',layout='centered')
+st.set_page_config(page_title='Question Answering bot',page_icon='😎',layout='wide')
 #image=plt.imread('app\img\gavel.jpg')
+
+
 #set the title
 st.title("Question Answering System for Legal Practioners ⚖⚖")
 #st.image(image,caption='Youngest lawyer in Ghana',width=400,use_column_width=False)
