@@ -1,4 +1,4 @@
-# *Project Title: Question-Answering System with SentenceTransformers, ElasticSearch, Docker, Flask, and Generative AI* 👩‍⚖️
+# *Project Title: Question-Answering System with SentenceTransformers(multi-qa-distilbert-cos-v1), ElasticSearch, Docker, Flask, and Generative AI* 👩‍⚖️
 -----------
 
 # Project video on Youtube
@@ -10,7 +10,7 @@
 
 This project aims to develop a simple Question-Answering (QA) system that leverages cutting-edge technologies and machine learning techniques. The system's core functionalities include searching for relevant passages in a given corpus and providing direct, concise, and accurate answers to user queries. The key components of this project are:
 
-1. **SentenceTransformers for Embeddings:** We utilize SentenceTransformers, a state-of-the-art model, to generate high-quality embeddings for text passages. These embeddings capture the semantic meaning of the text and are crucial for accurate QA.
+1. **SentenceTransformers for Embeddings:** We utilize SentenceTransformers(multi-qa-distilbert-cos-v1), a state-of-the-art model, to generate high-quality embeddings for text passages. These embeddings capture the semantic meaning of the text and are crucial for accurate QA.
 
 2. **ElasticSearch as a Vector Store:** ElasticSearch is employed as the vector store to efficiently index and retrieve the embeddings. This ensures fast and accurate searching of relevant passages.
 
@@ -28,7 +28,7 @@ This project aims to develop a simple Question-Answering (QA) system that levera
 
 2. **🔧Install Dependencies:** 
 
-To get started , follow these installation steps:
+ follow these installation steps:
 bash
 # setup the environment on windows by running the following code.
 ```python -m venv venv; venv\Scripts\activate; python -m pip install -q --upgrade pip; python -m pip install -r requirements.txt```  
