@@ -133,7 +133,7 @@ def upload_document():
     if uploaded_file:
         app.logger.info(msg='file uploaded')
         # Process the uploaded file 
-        # Here, we save it with a unique name
+        
         file_path = 'uploads/' + uploaded_file.filename
         uploaded_file.save(file_path)
         df=pd.read_csv(file_path)

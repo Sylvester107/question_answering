@@ -74,7 +74,7 @@ question = input("Ask a question: ") #take input question
 #prompt template(alpaca template)
 prompt_template = f""" You are legal practitioner with indepth knowledge about law. write a response that correcty answers the following question
 
-### Instruction:
+### question:
 {question}
 ### Response: """
 response=client.text_generation(prompt=prompt_template,max_new_tokens=1000,model='tiiuae/falcon-7b-instruct')
