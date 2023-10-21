@@ -42,7 +42,7 @@ def prepare_documents(df):
             "Metadata": row["Metadata"],
             "Embedding": {
                 "type": "dense_vector",
-                "dims": 3,  # Specify the dimensionality of your dense vectors
+                "dims": 3,  # Specify the dimensionality of the dense vectors
                 "value": row["Embedding"].tolist()
         }}
         documents.append(document)
@@ -95,7 +95,7 @@ def receive_question():
     question_embedding = model.encode(question)
     question_embedding=question_embedding.tolist()
     #index name created on elasticsearch
-    index_name="search-passagemetadataemb" 
+    index_name="search-questionanswering" 
     #search
     response = es.search(
             index=index_name,
