@@ -69,8 +69,8 @@ def Extraction(response,question_embedding):
 
 #create the elastic search instance
 es = Elasticsearch(
-  "https://92d997736474439dae5ccfaedc2ad990.us-central1.gcp.cloud.es.io:443",
-  api_key="Ym16RzI0b0JIcXpRTU9NQUNUNE46YnBmaUtCWHdTNXlnN1dZR2w4Rllqdw=="
+  "https://86781d93f79a4d2da8e59e9d57d0677f.us-central1.gcp.cloud.es.io:443",
+  api_key="eE1XdlVZc0J2ck9TR0dVUVEzQmo6QUhJcmxiTWNRcm15dzNNUmhUQVRrdw=="
 )
 app.logger.info(msg='es instance created')
 """

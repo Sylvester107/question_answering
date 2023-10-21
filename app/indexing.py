@@ -17,8 +17,8 @@ df['Embedding'] = df['Embedding'].apply(lambda x: np.fromstring(x.replace('\n', 
 
 #connect to elasticsearch cloud client
 es = Elasticsearch(
-  "https://92d997736474439dae5ccfaedc2ad990.us-central1.gcp.cloud.es.io:443",
-  api_key="Ym16RzI0b0JIcXpRTU9NQUNUNE46YnBmaUtCWHdTNXlnN1dZR2w4Rllqdw=="
+  "https://86781d93f79a4d2da8e59e9d57d0677f.us-central1.gcp.cloud.es.io:443",
+  api_key="eE1XdlVZc0J2ck9TR0dVUVEzQmo6QUhJcmxiTWNRcm15dzNNUmhUQVRrdw=="
 )
 
 
@@ -42,7 +42,7 @@ def prepare_documents(df):
 
 documents=prepare_documents(df=df)
 # Create a function to prepare documents for indexing
-index_name = "search-passagemetadataemb"  #index name created on elasticsearch
+index_name = "search-questionanswering"  #index name created on elasticsearch
 #index 
 for doc_id, document in enumerate(documents):
     es.index(index=index_name, body=document, id=doc_id)

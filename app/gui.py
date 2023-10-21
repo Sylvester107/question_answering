@@ -1,7 +1,6 @@
 import streamlit as st
 import requests
 from huggingface_hub import InferenceClient
-import matplotlib.pyplot as plt
 #Set the page configs
 st.set_page_config(page_title='Question Answering bot',page_icon='😎',layout='wide')
 #image=plt.imread('app\img\gavel.jpg')
