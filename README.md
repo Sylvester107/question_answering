@@ -69,6 +69,27 @@ streamlit run app\gui.py ```
  
 with place to type a question and response from indexed documents and falcon 7b
 
+# Docker image Usage
+- Pull the docker image [here](https://hub.docker.com/repository/docker/sylvesterjnr/question_answering)
+
+- run the following command in the terminal ``` docker run -d -p 5000:5000 sylvesterjnr/question answering ```
+
+- Using postman(or any API testing tool) send a post request to http://localhost:5000/ask endpoint with a sample 
+request body ``` {"question": "what is an offer"} ```
+
+- On windows download docker desktop [here](https://www.docker.com/products/docker-desktop/)
+
+- create an account on [docker hub](https://hub.docker.com/)
+
+- Pull the image using docker desktop gui
+
+- run the following command in the terminal ``` docker run -d -p 5000:5000 sylvesterjnr/question answering ```
+
+- Using postman(or any API testing tool) send a post request to http://localhost:5000/ask endpoint with a sample 
+request body ``` {"question": "what is an offer"} ```
+
+- NB: first request will take sometime
+
  **Author** 👥
 =================
 
