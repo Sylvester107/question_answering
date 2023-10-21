@@ -95,6 +95,9 @@ request body ``` {"question": "what is an offer"} ```
 
 - NB: first request will take sometime
 
+- the docker and postman interface 
+![api_docker interface](api_docker.PNG)
+
  **Author** 👥
 =================
 

@@ -62,7 +62,7 @@ while breaker=='y':
     )
    
     #index name created on elasticsearch
-    index_name="search-passagemetadataemb" 
+    index_name="search-questionanswering" 
     #search
     response = es.search(
             index=index_name,
